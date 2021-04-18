@@ -1,4 +1,4 @@
-BigId Background Check's Library for Ruby
+BigId Auth's Library for Ruby
 ==============
 
 [![Gem Version](https://badge.fury.io/rb/bigid_auth.svg)](https://badge.fury.io/rb/bigid_auth)
