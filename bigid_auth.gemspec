@@ -12,12 +12,16 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/Quasar-Flash/bigid-auth-ruby"
   s.summary     = "Bigid Auth Library"
   s.description = "A library to use BigData Corps auth features"
-
+  s.required_ruby_version = ">= 2.5"
   s.files = Dir["{lib}/**/*"] + ["LICENSE.txt", "Rakefile", "README.md", "CHANGELOG.md"]
   s.test_files = Dir["spec/**/*"]
   s.license = "MIT"
 
-  s.add_dep***REMOVED***ency             "faraday", "~> 1.4.0", ">= 1.0"
+  s.metadata["changelog_uri"] = "https://github.com/Quasar-Flash/bigid-auth-ruby/blob/master/CHANGELOG.md"
+  s.metadata["source_code_uri"] = "https://github.com/Quasar-Flash/bigid-auth-ruby"
+  s.metadata["bug_tracker_uri"] = "https://github.com/Quasar-Flash/bigid-auth-ruby/issues"
+
+  s.add_dep***REMOVED***ency             "faraday", "~> 1.4.1", ">= 1.0"
   s.add_dep***REMOVED***ency             "i18n", "~> 1.8.0", ">= 1.0"
   s.add_dep***REMOVED***ency             "json", "~> 2.5.0", ">= 2.0"
 
