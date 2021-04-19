@@ -22,6 +22,9 @@ require "bigid/auth/bad_request_error"
 require "bigid/auth/invalid_credentials_error"
 require "bigid/auth/server_error"
 
+I18n.load_path += Dir[File.join(__dir__, "locales", "**/*.yml")]
+I18n.reload! if I18n.backend.initialized?
+
 module Bigid
   BASE_URL = "https://bigid.bigdatacorp.com.br"
 
@@ -54,9 +57,5 @@ module Bigid
   module Auth
     AUTH_ENDPOINT    = "https://accesstoken.bigdatacorp.com.br"
     TOKEN_EXPIRATION = 60_000
-
-    I18n.load_path << Dir["#{File.expand_path('config/locales')}/*.yml"]
-    I18n.config.available_locales = :en, :'pt-BR'
-    I18n.default_locale = :en
   end
 end
