@@ -2,6 +2,7 @@
 
 require "rubygems"
 require "bundler"
+require "bigid_auth"
 
 begin
   Bundler.setup(:default, :development, :test)
