@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require "spec_helper"
-require "bigid_auth"
 
 RSpec.describe Bigid::Auth do
   describe "AUTH_ENDPOINT" do
@@ -18,15 +17,15 @@ RSpec.describe Bigid::Auth do
 
   describe ".configure" do
     before do
-      described_class.configuration = nil
+      Bigid.configuration = nil
       ENV.clear
     end
 
-    subject { described_class.configuration }
+    subject { Bigid.configuration }
 
     context "when configuration is defined" do
       before do
-        described_class.configure do |config|
+        Bigid.configure do |config|
           config.username = "username_value"
           config.password = "password_value"
         end
@@ -65,7 +64,7 @@ RSpec.describe Bigid::Auth do
         ENV["BIGID_USERNAME"] = "username_value"
         ENV["BIGID_PASSWORD"] = "password_value"
 
-        described_class.configure do |config|
+        Bigid.configure do |config|
           config.username = "username_value2"
           config.password = "password_value2"
         end
