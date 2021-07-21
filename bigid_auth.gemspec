@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
   s.metadata["source_code_uri"] = "https://github.com/Quasar-Flash/bigid-auth-ruby"
   s.metadata["bug_tracker_uri"] = "https://github.com/Quasar-Flash/bigid-auth-ruby/issues"
 
-  s.add_dependency             "faraday", "~> 1.4.1", ">= 1.0"
+  s.add_dependency             "faraday", ">= 1.4.1", "< 1.6.0"
   s.add_dependency             "i18n", "~> 1.8.0", ">= 1.0"
   s.add_dependency             "json", "~> 2.5.0", ">= 2.0"
 
