@@ -1,15 +1,10 @@
 # frozen_string_literal: true
 
-require "faraday"
+require "flash_integration"
 require "i18n"
 require "json"
 
 require "bigid/auth/version"
-
-require "bigid/auth/integration/multipart_flat"
-require "bigid/auth/integration/response"
-require "bigid/auth/integration/request"
-require "bigid/auth/integration/connection"
 
 require "bigid/auth/connection"
 require "bigid/auth/authentication"
