@@ -14,76 +14,97 @@ Dev Requirements
 Global Installation
 -----------------
 
-    gem install bigid_auth
+```ruby
+gem install bigid_auth
+```
 
 Installation for Rails
 -----------------
 
-    # Add to the Gemfile
-    gem 'bigid_auth', '~> 0.1.0'
-
-Setting the BigID credentials
------------------
-
-    # Set the env variables
-    ENV['BIGID_USERNAME'] = 'your_username'
-    ENV['BIGID_PASSWORD'] = 'your_password'
+```ruby
+# Add to the Gemfile
+gem "bigid_auth", '~> 0.1.0'
+```
 
 Setting the BigID credentials - Rails Project
 -----------------
 
 Create the config/initializers/bigid.rb file and define:
 
-    # Set the env variables
-    Bigid.configure do |config|
-        config.username = 'your_username'
-        config.password = 'your_password'
-    end
+```ruby
+# Set the env variables
+Bigid.configure do |config|
+  config.username = 'JHONNY.MUNIS@QFLASH.COM.BR'
+  config.password = 'crtvreru'
+end
+```
 
 Applying an authentication
 -----------------
 
-    require 'bigid_auth'
+```ruby
+require 'bigid_auth'
 
-    auth = Bigid::Auth::Authentication.new
-    auth.login
+Bigid::Auth::Authentication.new.login
+```
 
 Result Example
 -----------------
 
-    #<Bigid::Auth::Integration::Response:0x0000564181d2bef0
-        @request=#<Bigid::Auth::Integration::Request:0x0000564181d76a18
-            @method=:post,
-            @url="https://accesstoken.bigdatacorp.com.br/Generate",
-            @params={},
-            @headers={:"Content-Type"=>"application/json", :Accept=>"application/json"},
-            @body="{\"login\":\"username\",\"password\":\"crtvreru\",\"expires\":60000}",
-            @time=2021-04-18 18:55:24.678349974 UTC>,
-            @status=200,
-            @body="{\"expiration\":\"Mon, 21 Feb 2028 18:55:24 GMT\",\"message\":\"Token Generated\",\"success\":true,\"token\":\"xxxxxxxxxxxx\",\"tokenID\":\"0000000000\"}\n", @time=2021-04-18 18:55:24.995163484 UTC>
+```ruby
+<Flash::Integration::Response:xxxx
+  @request=<Flash::Integration::Request:xxx
+    @method = :post,
+    @url = "https://accesstoken.bigdatacorp.com.br/Generate",
+    @params = {},
+    @headers = {
+      :"Content-Type" => "application/json",
+      :Accept => "application/json"
+    },
+    @body = "{\"login\":\"email@email.com\",\"password\":\"xxxxxx\",\"expires\":60000}",
+    @time = 2021-07-21 22:49:57.869382432 UTC>,
+  @status = 200,
+  @headers = {
+    "content-type" => "application/json",
+    "content-length" => "361",
+    "connection" => "keep-alive",
+    "date" => "Wed, 21 Jul 2021 22:49:58 GMT"
+  },
+  @body="{\"expiration\":\"Thu, 25 May 2028 22:49:58 GMT\",\"message\":\"Token Generated\",\"success\":true,\"token\":\"xxx\",\"tokenID\":\"xxx\"}\n",
+  @time=2021-07-21 22:49:58.248277077 UTC>
+
+```
 
 Problems?
 -----------------
 
-**Please do not directly email any committers with questions or problems.**  A community is best served when discussions are held in public.
+**Please do not directly email any committers with questions or problems.**  A
+community is best served when discussions are held in public.
 
-Searching the [issues](https://github.com/Quasar-Flash/bigid-auth-ruby/issues) for your problem is also a good idea.
+Searching the [issues](https://github.com/Quasar-Flash/bigid-auth-ruby/issues)
+for your problem is also a good idea.
 
 Contributing
 -----------------
 
-- Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet;
-- Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it;
+- Check out the latest master to make sure the feature hasn't been implemented
+or the bug hasn't been fixed yet;
+- Check out the issue tracker to make sure someone already hasn't requested it
+and/or contributed it;
 - Fork the project;
 - Start a feature/bugfix branch;
 - Commit and push until you are happy with your contribution;
-- Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.;
-- Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
+- Make sure to add tests for it. This is important so I don't break it in a
+future version unintentionally.;
+- Please try not to mess with the Rakefile, version, or history. If you want to
+have your own version, or is otherwise necessary, that is fine, but please
+isolate to its own commit so I can cherry-pick around it.
 
 License
 -----------------
 
-Please see [LICENSE](https://github.com/Quasar-Flash/bigid-auth-ruby/blob/master/LICENSE.txt) for licensing details.
+Please see [LICENSE](https://github.com/Quasar-Flash/bigid-auth-ruby/blob/master/LICENSE.txt)
+for licensing details.
 
 Authors
 -----------------
