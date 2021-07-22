@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Danilo Carolino"]
   s.email       = ["danilo.carolino@qflash.com.br"]
-  s.homepage    = "https://github.com/Quasar-Flash/bigid-auth-ruby"
+  s.homepage    = "https://github.com/Quasar-Flash/bigid_auth"
   s.summary     = "Bigid Auth Library"
   s.description = "A library to use BigData Corps auth features"
   s.required_ruby_version = ">= 2.5"
@@ -17,9 +17,9 @@ Gem::Specification.new do |s|
   s.test_files = Dir["spec/**/*"]
   s.license = "MIT"
 
-  s.metadata["changelog_uri"] = "https://github.com/Quasar-Flash/bigid-auth-ruby/blob/master/CHANGELOG.md"
-  s.metadata["source_code_uri"] = "https://github.com/Quasar-Flash/bigid-auth-ruby"
-  s.metadata["bug_tracker_uri"] = "https://github.com/Quasar-Flash/bigid-auth-ruby/issues"
+  s.metadata["changelog_uri"] = "https://github.com/Quasar-Flash/bigid_auth/blob/master/CHANGELOG.md"
+  s.metadata["source_code_uri"] = "https://github.com/Quasar-Flash/bigid_auth"
+  s.metadata["bug_tracker_uri"] = "https://github.com/Quasar-Flash/bigid_auth/issues"
 
   s.add_dep***REMOVED***ency             "flash_integration", "~> 0.1.0"
   s.add_dep***REMOVED***ency             "i18n", "~> 1.8.0", ">= 1.0"
