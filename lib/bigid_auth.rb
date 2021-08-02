@@ -18,7 +18,7 @@ require "bigid/auth/invalid_credentials_error"
 require "bigid/auth/server_error"
 
 I18n.load_path += Dir[File.join(__dir__, "locales", "**/*.yml")]
-I18n.reload! if I18n.back***REMOVED***.initialized?
+I18n.reload! if I18n.backend.initialized?
 
 module Bigid
   BASE_URL = "https://bigid.bigdatacorp.com.br"
@@ -28,29 +28,29 @@ module Bigid
 
     def configuration
       @configuration ||= Configuration.new
-    ***REMOVED***
-  ***REMOVED***
+    end
+  end
 
   def self.configure
     self.configuration ||= Configuration.new
 
     yield(configuration)
-  ***REMOVED***
+  end
 
   class Configuration
     attr_writer :username, :password
 
     def username
       @username ||= ENV["BIGID_USERNAME"]
-    ***REMOVED***
+    end
 
     def password
       @password ||= ENV["BIGID_PASSWORD"]
-    ***REMOVED***
-  ***REMOVED***
+    end
+  end
 
   module Auth
     AUTH_ENDPOINT    = "https://accesstoken.bigdatacorp.com.br"
     TOKEN_EXPIRATION = 60_000
-  ***REMOVED***
-***REMOVED***
+  end
+end

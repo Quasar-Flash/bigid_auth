@@ -14,30 +14,30 @@ module Bigid
         @authentication = authentication
         @cache = cache
         @token_expiration_time_in_seconds = token_expiration_time_in_seconds
-      ***REMOVED***
+      end
 
       def default_headers
         super.merge(Authorization: (@cache ? cached_token : auth_token))
-      ***REMOVED***
+      end
 
       private
         def auth_token
           response = @authentication.login
           extract_token(response.body)
-        ***REMOVED***
+        end
 
         def cached_token
           @cache.fetch(COOKIE_CACHE_KEY, expires_in: @token_expiration_time_in_seconds.seconds) do
             auth_token
-          ***REMOVED***
-        ***REMOVED***
+          end
+        end
 
         def extract_token(value)
           raise Bigid::Auth::AuthenticationError unless value
 
           value_json = JSON.parse(value)
           "Bearer #{value_json['token']}"
-        ***REMOVED***
-    ***REMOVED***
-  ***REMOVED***
-***REMOVED***
+        end
+    end
+  end
+end

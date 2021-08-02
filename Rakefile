@@ -5,7 +5,7 @@ begin
   require "bundler/setup"
 rescue LoadError
   puts "You must `gem install bundler` and `bundle install` to run rake tasks"
-***REMOVED***
+end
 
 begin
   require "rdoc/task"
@@ -14,7 +14,7 @@ rescue LoadError
   require "rake/rdoctask"
 
   RDoc::Task = Rake::RDocTask
-***REMOVED***
+end
 
 RDoc::Task.new(:rdoc) do |rdoc|
   rdoc.rdoc_dir = "rdoc"
@@ -22,7 +22,7 @@ RDoc::Task.new(:rdoc) do |rdoc|
   rdoc.options << "--line-numbers"
   rdoc.rdoc_files.include("README.rdoc")
   rdoc.rdoc_files.include("lib/**/*.rb")
-***REMOVED***
+end
 
 Bundler::GemHelper.install_tasks
 
@@ -32,10 +32,10 @@ begin
 
   RuboCop::RakeTask.new(:rubocop) do |t|
     t.options = ["--display-cop-names"]
-  ***REMOVED***
+  end
 rescue LoadError
   # no rspec available
-***REMOVED***
+end
 
 begin
   require "rspec/core/rake_task"
@@ -43,6 +43,6 @@ begin
   RSpec::Core::RakeTask.new(:spec)
 rescue LoadError
   # no rspec available
-***REMOVED***
+end
 
 task default: %i[rubocop spec]

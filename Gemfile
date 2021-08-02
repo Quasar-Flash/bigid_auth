@@ -2,5 +2,5 @@
 
 source "https://rubygems.org"
 
-# Specify your gem's dep***REMOVED***encies in the .gemspec
+# Specify your gem's dependencies in the .gemspec
 gemspec

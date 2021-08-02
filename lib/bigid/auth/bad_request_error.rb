@@ -3,6 +3,6 @@
 module Bigid
   module Auth
     class BadRequestError < BaseError
-    ***REMOVED***
-  ***REMOVED***
-***REMOVED***
+    end
+  end
+end

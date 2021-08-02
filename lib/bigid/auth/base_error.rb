@@ -5,13 +5,13 @@ module Bigid
     class BaseError < StandardError
       def initialize(message = self.class.default_message)
         super
-      ***REMOVED***
+      end
 
       def self.default_message
         name = self.name.dup
 
         I18n.t("errors.#{underscore(name)}")
-      ***REMOVED***
+      end
 
       def self.underscore(str)
         str.gsub(/::/, ".")
@@ -19,7 +19,7 @@ module Bigid
            .gsub(/([a-z\d])([A-Z])/, '\1_\2')
            .tr("-", "_")
            .downcase
-      ***REMOVED***
-    ***REMOVED***
-  ***REMOVED***
-***REMOVED***
+      end
+    end
+  end
+end

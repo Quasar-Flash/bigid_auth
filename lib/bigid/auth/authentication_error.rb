@@ -3,6 +3,6 @@
 module Bigid
   module Auth
     class AuthenticationError < BaseError
-    ***REMOVED***
-  ***REMOVED***
-***REMOVED***
+    end
+  end
+end

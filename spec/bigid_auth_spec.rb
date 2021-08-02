@@ -7,36 +7,36 @@ RSpec.describe Bigid::Auth do
     subject { defined? Bigid::Auth::AUTH_ENDPOINT }
 
     it { expect(subject).to be_truthy }
-  ***REMOVED***
+  end
 
   describe "TOKEN_EXPIRATION" do
     subject { defined? Bigid::Auth::TOKEN_EXPIRATION }
 
     it { expect(subject).to be_truthy }
-  ***REMOVED***
+  end
 
   describe ".configure" do
     before do
       Bigid.configuration = nil
       ENV.clear
-    ***REMOVED***
+    end
 
     subject { Bigid.configuration }
 
     context "when configuration is defined" do
       before do
-        ***REMOVED***
+        Bigid.configure do |config|
           config.username = "username_value"
           config.password = "password_value"
-        ***REMOVED***
-      ***REMOVED***
+        end
+      end
 
       it { expect(subject).not_to be_nil }
 
       it { expect(subject.username).to eq("username_value") }
 
       it { expect(subject.password).to eq("password_value") }
-    ***REMOVED***
+    end
 
     context "when configuration is not defined" do
       it { expect(subject).not_to be_nil }
@@ -44,43 +44,43 @@ RSpec.describe Bigid::Auth do
       it { expect(subject.username).to be_nil }
 
       it { expect(subject.password).to be_nil }
-    ***REMOVED***
+    end
 
     context "when its configured by envs" do
       before do
         ENV["BIGID_USERNAME"] = "username_value"
         ENV["BIGID_PASSWORD"] = "password_value"
-      ***REMOVED***
+      end
 
       it { expect(subject).not_to be_nil }
 
       it { expect(subject.username).to eq("username_value") }
 
       it { expect(subject.password).to eq("password_value") }
-    ***REMOVED***
+    end
 
     context "when its envs configured and configs setted" do
       before do
         ENV["BIGID_USERNAME"] = "username_value"
         ENV["BIGID_PASSWORD"] = "password_value"
 
-        ***REMOVED***
+        Bigid.configure do |config|
           config.username = "username_value2"
           config.password = "password_value2"
-        ***REMOVED***
-      ***REMOVED***
+        end
+      end
 
       it { expect(subject).not_to be_nil }
 
       it { expect(subject.username).to eq("username_value2") }
 
       it { expect(subject.password).to eq("password_value2") }
-    ***REMOVED***
+    end
 
     describe "I18n calls" do
       it { expect(I18n.default_locale).to eq(:en) }
 
       it { expect(I18n.config.available_locales).to contain_exactly(:en, :'pt-BR') }
-    ***REMOVED***
-  ***REMOVED***
-***REMOVED***
+    end
+  end
+end

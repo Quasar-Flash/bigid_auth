@@ -9,7 +9,7 @@ SimpleCov.start do
   add_filter "/spec/"
   minimum_coverage 70
   minimum_coverage_by_file 40
-***REMOVED***
+end
 
 require "rubygems"
 require "bundler"
@@ -23,7 +23,7 @@ rescue Bundler::BundlerError => e
   warn "Run `bundle install` to install missing gems"
 
   exit e.status_code
-***REMOVED***
+end
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
@@ -31,7 +31,7 @@ RSpec.configure do |config|
 
   config.expect_with :rspec do |c|
     c.syntax = :expect
-  ***REMOVED***
-***REMOVED***
+  end
+end
 
 # minitest/mock # Uncomment me to use minitest mocks

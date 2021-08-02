@@ -5,7 +5,7 @@ module Bigid
     class AuthenticatedResource
       def initialize(connection: AuthenticatedConnection.new)
         @connection = connection
-      ***REMOVED***
-    ***REMOVED***
-  ***REMOVED***
-***REMOVED***
+      end
+    end
+  end
+end

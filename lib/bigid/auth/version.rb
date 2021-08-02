@@ -10,5 +10,5 @@ module Bigid
     # Minor - Incremented for new backwards-compatible features + deprecations
     # Patch - Incremented for backwards-compatible bug fixes
     VERSION = "0.2.0"
-  ***REMOVED***
-***REMOVED***
+  end
+end
