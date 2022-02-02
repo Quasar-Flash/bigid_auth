@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/Quasar-Flash/bigid_auth"
   s.summary     = "Bigid Auth Library"
   s.description = "A library to use BigData Corps auth features"
-  s.required_ruby_version = ">= 2.5"
+  s.required_ruby_version = ">= 2.7"
   s.files = Dir["{lib}/**/*"] + ["LICENSE.txt", "Rakefile", "README.md", "CHANGELOG.md"]
   s.test_files = Dir["spec/**/*"]
   s.license = "MIT"
@@ -22,17 +22,17 @@ Gem::Specification.new do |s|
   s.metadata["bug_tracker_uri"] = "https://github.com/Quasar-Flash/bigid_auth/issues"
 
   s.add_dependency             "flash_integration", "~> 0.1.0"
-  s.add_dependency             "i18n", "~> 1.8.0", ">= 1.0"
+  s.add_dependency             "i18n", ">= 1.8", "< 1.10"
   s.add_dependency             "json", ">= 2.5", "< 2.7"
 
   s.add_development_dependency "bundler", ">= 1.2.0"
   s.add_development_dependency "factory_bot", "~> 6.2.0"
   s.add_development_dependency "gemsurance", "~> 0.10"
-  s.add_development_dependency "pry", "~> 0.14.0"
+  s.add_development_dependency "pry", "~> 0.14.1"
   s.add_development_dependency "rake", "~> 13.0", ">= 10.0.0"
   s.add_development_dependency "rspec", "~> 3.10.0"
-  s.add_development_dependency "rubocop", "~> 1.23.0"
-  s.add_development_dependency "rubocop-packaging", "~> 0.5.0"
-  s.add_development_dependency "rubocop-performance", "~> 1.12.0"
-  s.add_development_dependency "simplecov", "~> 0.21.0"
+  s.add_development_dependency "rubocop", "~> 1.25.0"
+  s.add_development_dependency "rubocop-packaging", "~> 0.5.1"
+  s.add_development_dependency "rubocop-performance", "~> 1.13.2"
+  s.add_development_dependency "simplecov", "~> 0.21.2"
 end
