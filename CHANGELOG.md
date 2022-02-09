@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v0.2.1.1-20220209 - Danilo Carolino
+
+* bump flash_integration version to v0.1.2
+
 ## v0.2.1-20220202 - Danilo Carolino
 
 * [QC-79](https://qflash.atlassian.net/jira/software/projects/QC/boards/31?selectedIssue=QC-79)
