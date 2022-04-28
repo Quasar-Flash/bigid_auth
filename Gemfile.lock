@@ -47,7 +47,7 @@ GEM
       bundler (>= 1.2, < 3.0)
       gems (>= 0.8)
       git (~> 1.2)
-    git (1.10.2)
+    git (1.11.0)
       rchardet (~> 1.8)
     i18n (1.10.0)
       concurrent-ruby (~> 1.0)
