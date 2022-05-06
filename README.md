@@ -2,7 +2,7 @@ BigId Auth's Library for Ruby
 ==============
 
 [![Gem Version](https://badge.fury.io/rb/bigid_auth.svg)](https://badge.fury.io/rb/bigid_auth)
-[![bigid_auth](https://github.com/Quasar-Flash/bigid_auth/actions/workflows/ruby.yml/badge.svg)](https://github.com/Quasar-Flash/bigid_auth/actions/workflows/ruby.yml)
+[![bigid_auth](https://github.com/Quasar-Flash/bigid_auth/actions/workflows/build.yml/badge.svg)](https://github.com/Quasar-Flash/bigid_auth/actions/workflows/build.yml)
 
 Dev Requirements
 -----------------
@@ -22,7 +22,16 @@ Installation for Rails
 
 ```ruby
 # Add to the Gemfile
-gem "bigid_auth", "~> 0.2.0"
+gem "bigid_auth", "~> 0.2.1"
+```
+
+Installation using the Github Gem repo
+-----------------
+
+```ruby
+source "https://rubygems.pkg.github.com/quasar-flash" do
+  gem "bigid_auth", "0.2.1"
+end
 ```
 
 Setting the BigID credentials - Rails Project
