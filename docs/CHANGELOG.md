@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## v0.2.1.2-20220505 - [Danilo Carolino](@danilogco)
+## v0.2.1.3-20220505 - [Danilo Carolino](@danilogco)
 
 * build(deps): bump ruby version from 3.1.0 to 3.1.2
 
