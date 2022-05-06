@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    bigid_auth (0.2.1.1)
+    bigid_auth (0.2.1.2)
       flash_integration (~> 0.1.2)
       i18n (>= 1.8, < 1.11)
       json (>= 2.5, < 2.7)
