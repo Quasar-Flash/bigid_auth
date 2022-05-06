@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.summary     = "Bigid Auth Library"
   s.description = "A library to use BigData Corps auth features"
   s.required_ruby_version = ">= 2.7"
-  s.files = Dir["{lib}/**/*"] + ["LICENSE.txt", "Rakefile", "README.md", "CHANGELOG.md"]
+  s.files = Dir["{lib}/**/*"] + Dir["{docs}/**/*"] + ["Rakefile"]
   s.test_files = Dir["spec/**/*"]
   s.license = "MIT"
 

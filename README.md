@@ -7,7 +7,7 @@ BigId Auth's Library for Ruby
 Dev Requirements
 -----------------
 
-- Ruby: Any version
+- Ruby: Higher version
 - Bundler
 
 Global Installation

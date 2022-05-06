@@ -1,10 +1,15 @@
 # CHANGELOG
 
-## v0.2.1.1-20220209 - Danilo Carolino
+## v0.2.1.2-20220505 - [Danilo Carolino](@danilogco)
+
+* build(deps): bump ruby version from 3.1.0 to 3.1.2
+
+## v0.2.1.1-20220209 - [Danilo Carolino](@danilogco)
 
 * bump flash_integration version to v0.1.2
+* add docker configs to the project
 
-## v0.2.1-20220202 - Danilo Carolino
+## v0.2.1-20220202 - [Danilo Carolino](@danilogco)
 
 * [QC-79](https://qflash.atlassian.net/jira/software/projects/QC/boards/31?selectedIssue=QC-79)
 Reduzir uso de pipelines em projetos Ruby [Dependabot]

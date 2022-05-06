@@ -1,15 +1,18 @@
-name: bigid_auth
+name: Build
 
 on:
   workflow_dispatch:
   push:
     branches:
-      - master
+      - dev
   pull_request:
-    branches:  '*'
+    branches:
+      - '*'
+    paths-ignore:
+      - '**.md'
 
 jobs:
-  pipeline:
+  Testing:
     if: ${{ github.actor != 'dependabot[bot]' }}
     runs-on: ubuntu-latest
     steps:
