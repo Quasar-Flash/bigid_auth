@@ -1,28 +1,47 @@
-# CHANGELOG
+# Changelog
 
-## v0.2.1.4-20220505 - [Danilo Carolino](@danilogco)
+All notable changes to this project will be documented in this file.
 
-* build(deps): bump ruby version from 3.1.0 to 3.1.2
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## v0.2.1.1-20220209 - [Danilo Carolino](@danilogco)
+## [Unreleased]
 
-* bump flash_integration version to v0.1.2
-* add docker configs to the project
+## [0.2.1.4] - 2022-05-05
 
-## v0.2.1-20220202 - [Danilo Carolino](@danilogco)
+### Changes
 
-* [QC-79](https://qflash.atlassian.net/jira/software/projects/QC/boards/31?selectedIssue=QC-79)
+- build(deps): bump ruby version from 3.1.0 to 3.1.2
+
+## [0.2.1.1] - 2022-02-09
+
+### Changes
+
+- bump flash_integration version to v0.1.2
+- add docker configs to the project
+
+## [0.2.1] - 2022-02-02
+
+### Changes
+
+- [QC-79](https://qflash.atlassian.net/jira/software/projects/QC/boards/31?selectedIssue=QC-79)
 Reduzir uso de pipelines em projetos Ruby [Dependabot]
-* Bump Ruby version to v3.1.0
+- Bump Ruby version to v3.1.0
 
-## v0.2.0
+## [0.2.0] - 2022-01
 
-* Use the gem "flash_integration" to retrieve a connection
+### Added
 
-## v0.1.1
+- Use the gem "flash_integration" to retrieve a connection
 
-* Fix a problem with the locale initialization in Rails projects
+## [0.1.1] - 2022-01
 
-## v0.1.0
+## Fixed
 
-* Initial release of Bigid Auth
+- Fix a problem with the locale initialization in Rails projects
+
+## [0.1.0]
+
+### Added
+
+- Initial release of Bigid Auth
