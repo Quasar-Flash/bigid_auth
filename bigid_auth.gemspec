@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
   s.metadata["bug_tracker_uri"] = "https://github.com/Quasar-Flash/bigid_auth/issues"
 
   s.add_dependency             "flash_integration", "~> 1.0.0"
-  s.add_dependency             "i18n", ">= 1.8", "< 1.11"
+  s.add_dependency             "i18n", ">= 1.8", "< 1.13"
   s.add_dependency             "json", ">= 2.5", "< 2.7"
 
   s.add_development_dependency "bundler", "~> 2.3.14", ">= 2.3.0"
