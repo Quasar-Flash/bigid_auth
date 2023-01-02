@@ -44,7 +44,7 @@ jobs:
         with:
           validation_depth: 10
           version: ${{ steps.vars.outputs.project_version }}
-          path: ./docs/CHANGELOG.md
+          path: ./CHANGELOG.md
       - name: Create a GitHub release
         uses: ncipollo/release-action@v1
         with:
