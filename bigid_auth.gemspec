@@ -22,16 +22,15 @@ Gem::Specification.new do |s|
   s.metadata["bug_tracker_uri"] = "https://github.com/Quasar-Flash/bigid_auth/issues"
 
   s.add_dependency             "flash_integration", "~> 1.0.0"
-  s.add_dependency             "i18n", ">= 1.8", "< 1.13"
-  s.add_dependency             "json", ">= 2.5", "< 2.7"
+  s.add_dependency             "i18n"
+  s.add_dependency             "json"
 
-  s.add_development_dependency "bundler", "~> 2.3.14", ">= 2.3.0"
   s.add_development_dependency "factory_bot", "~> 6.2.1"
   s.add_development_dependency "pry", "~> 0.14.1"
   s.add_development_dependency "rake", "~> 13.0.6", ">= 10.0"
   s.add_development_dependency "rspec", "~> 3.12.0"
-  s.add_development_dependency "rubocop", "~> 1.41.0"
-  s.add_development_dependency "rubocop-packaging", "~> 0.5.1"
-  s.add_development_dependency "rubocop-performance", "~> 1.15.0"
+  s.add_development_dependency "rubocop", "~> 1.42.0"
+  s.add_development_dependency "rubocop-packaging", "~> 0.5.2"
+  s.add_development_dependency "rubocop-performance", "~> 1.15.2"
   s.add_development_dependency "simplecov", "~> 0.22.0"
 end
