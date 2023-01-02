@@ -22,7 +22,7 @@ Installation for Rails
 
 ```ruby
 # Add to the Gemfile
-gem "bigid_auth", "~> 0.2.1"
+gem "bigid_auth", "~> 1.0.0"
 ```
 
 Installation using the Github Gem repo
@@ -30,7 +30,7 @@ Installation using the Github Gem repo
 
 ```ruby
 source "https://rubygems.pkg.github.com/quasar-flash" do
-  gem "bigid_auth", "0.2.1"
+  gem "bigid_auth", "1.0.0"
 end
 ```
 
