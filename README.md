@@ -3,6 +3,7 @@ BigId Auth's Library for Ruby
 
 [![Gem Version](https://badge.fury.io/rb/bigid_auth.svg)](https://badge.fury.io/rb/bigid_auth)
 [![bigid_auth](https://github.com/Quasar-Flash/bigid_auth/actions/workflows/build.yml/badge.svg)](https://github.com/Quasar-Flash/bigid_auth/actions/workflows/build.yml)
+[![CodeQL](https://github.com/Quasar-Flash/bigid_auth/actions/workflows/codeql.yml/badge.svg)](https://github.com/Quasar-Flash/bigid_auth/actions/workflows/codeql.yml)
 
 Dev Requirements
 -----------------
