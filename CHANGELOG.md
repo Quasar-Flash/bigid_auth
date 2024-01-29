@@ -7,12 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0] - 2024-01-29
+
+### Changed
+
+- Require ruby version >= 3.1 by @danilogco
+- Ruby version < 3.1 aren't supported anymore
+- Dependencies update by @danilogco
+- Adds Ruby v3.3.0 to the unit test matrix by @danilogco
+
 ## [1.0.1] - 2023-02-03
 
 ### Changed
 
-- Adiciona workflow de deployment padronizado ao projeto por @danilogco
-- Adiciona o Ruby v3.2.0 para a matriz de testes unitários por @danilogco
+- Adds standardized deployment workflow to the project by @danilogco
+- Adds Ruby v3.2.0 to the unit test matrix by @danilogco
 
 ## [1.0.0] - 2023-01-02
 
@@ -45,7 +54,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - [QC-79](https://qflash.atlassian.net/jira/software/projects/QC/boards/31?selectedIssue=QC-79)
-Reduzir uso de pipelines em projetos Ruby [Dependabot]
+  Reduzir uso de pipelines em projetos Ruby [Dependabot]
 - Bump Ruby version to v3.1.0
 
 ## [0.2.0] - 2022-01
