@@ -1,33 +1,28 @@
-BigId Auth's Library for Ruby
-==============
+# BigId Auth's Library for Ruby
 
 [![Gem Version](https://badge.fury.io/rb/bigid_auth.svg)](https://badge.fury.io/rb/bigid_auth)
 [![bigid_auth](https://github.com/Quasar-Flash/bigid_auth/actions/workflows/build.yml/badge.svg)](https://github.com/Quasar-Flash/bigid_auth/actions/workflows/build.yml)
 [![CodeQL](https://github.com/Quasar-Flash/bigid_auth/actions/workflows/codeql.yml/badge.svg)](https://github.com/Quasar-Flash/bigid_auth/actions/workflows/codeql.yml)
 
-Dev Requirements
------------------
+## Dev Requirements
 
 - Ruby: Higher version
 - Bundler
 
-Global Installation
------------------
+## Global Installation
 
 ```ruby
 gem install bigid_auth
 ```
 
-Installation for Rails
------------------
+## Installation for Rails
 
 ```ruby
 # Add to the Gemfile
 gem "bigid_auth", "~> 1.0.0"
 ```
 
-Installation using the Github Gem repo
------------------
+## Installation using the Github Gem repo
 
 ```ruby
 source "https://rubygems.pkg.github.com/quasar-flash" do
@@ -35,8 +30,7 @@ source "https://rubygems.pkg.github.com/quasar-flash" do
 end
 ```
 
-Setting the BigID credentials - Rails Project
------------------
+## Setting the BigID credentials - Rails Project
 
 Create the config/initializers/bigid.rb file and define:
 
@@ -48,8 +42,7 @@ Bigid.configure do |config|
 end
 ```
 
-Applying an authentication
------------------
+## Applying an authentication
 
 ```ruby
 require "bigid_auth"
@@ -57,8 +50,7 @@ require "bigid_auth"
 Bigid::Auth::Authentication.new.login
 ```
 
-Result Example
------------------
+## Result Example
 
 ```ruby
 <Flash::Integration::Response:xxxx
@@ -84,38 +76,34 @@ Result Example
 
 ```
 
-Problems?
------------------
+## Problems?
 
-**Please do not directly email any committers with questions or problems.**  A
+**Please do not directly email any committers with questions or problems.** A
 community is best served when discussions are held in public.
 
 Searching the [issues](https://github.com/Quasar-Flash/bigid_auth/issues)
 for your problem is also a good idea.
 
-Contributing
------------------
+## Contributing
 
 - Check out the latest master to make sure the feature hasn't been implemented
-or the bug hasn't been fixed yet;
+  or the bug hasn't been fixed yet;
 - Check out the issue tracker to make sure someone already hasn't requested it
-and/or contributed it;
+  and/or contributed it;
 - Fork the project;
 - Start a feature/bugfix branch;
 - Commit and push until you are happy with your contribution;
 - Make sure to add tests for it. This is important so I don't break it in a
-future version unintentionally.;
+  future version unintentionally.;
 - Please try not to mess with the Rakefile, version, or history. If you want to
-have your own version, or is otherwise necessary, that is fine, but please
-isolate to its own commit so I can cherry-pick around it.
+  have your own version, or is otherwise necessary, that is fine, but please
+  isolate to its own commit so I can cherry-pick around it.
 
-License
------------------
+## License
 
 Please see [LICENSE](https://github.com/Quasar-Flash/bigid_auth/blob/master/LICENSE.txt)
 for licensing details.
 
-Authors
------------------
+## Authors
 
 Danilo Carolino, [@danilogco](https://github.com/danilogco) / [@Quasar-Flash](https://github.com/Quasar-Flash)
